@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+# @ Author : Abhisek
 # Form implementation generated from reading ui file 'scattering1.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.7

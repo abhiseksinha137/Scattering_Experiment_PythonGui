@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>731</width>
+    <height>409</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Scattering Experiment</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_5">
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Connections</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>COM Linear</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="txtbx_COMLinear"/>
+    </item>
+    <item row="1" column="2">
+     <widget class="QPushButton" name="btn_LinearConnect">
+      <property name="text">
+       <string>Connect</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3" colspan="3">
+     <widget class="QPushButton" name="btn_COMLinearDisconnect">
+      <property name="text">
+       <string>Disconnect</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="6" rowspan="2">
+     <widget class="Line" name="line">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="7" colspan="2">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>COM Servo</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="10" colspan="2">
+     <widget class="QLineEdit" name="txtbx_COMServo"/>
+    </item>
+    <item row="1" column="12" colspan="3">
+     <widget class="QPushButton" name="btn_servoConnect">
+      <property name="text">
+       <string>Connect</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="15" colspan="2">
+     <widget class="QPushButton" name="btn_COMServoDisconnect">
+      <property name="text">
+       <string>Disconnect</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>COM Rotation</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="txtbx_COMRotation"/>
+    </item>
+    <item row="2" column="2">
+     <widget class="QPushButton" name="btn_RotationConnect">
+      <property name="text">
+       <string>Connect</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3" colspan="3">
+     <widget class="QPushButton" name="btn_COMRotationDisconnect">
+      <property name="text">
+       <string>Disconnect</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="7" colspan="2">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="10" colspan="2">
+     <widget class="QLineEdit" name="lineEdit_2"/>
+    </item>
+    <item row="2" column="12" colspan="3">
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="text">
+       <string>Connect</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="15" colspan="2">
+     <widget class="QPushButton" name="pushButton_6">
+      <property name="text">
+       <string>Disconnect</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0" rowspan="2" colspan="17">
+     <widget class="Line" name="line_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="4" rowspan="13">
+     <widget class="Line" name="line_3">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="5" rowspan="2" colspan="3">
+     <widget class="QLabel" name="label_10">
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Linear Stage</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="13" rowspan="13" colspan="2">
+     <widget class="Line" name="line_5">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0" rowspan="2">
+     <widget class="QLabel" name="label_6">
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Rotation Stage</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="15" rowspan="2" colspan="2">
+     <widget class="QPushButton" name="btn_linear_tare_3">
+      <property name="text">
+       <string>On</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="14" rowspan="2">
+     <widget class="QLabel" name="label_16">
+      <property name="text">
+       <string>Light</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="0" rowspan="2">
+     <widget class="QLabel" name="label_7">
+      <property name="text">
+       <string>Current Pos</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="5" rowspan="2" colspan="2">
+     <widget class="QLabel" name="label_11">
+      <property name="text">
+       <string>Current Pos</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="1">
+     <widget class="QLineEdit" name="txtbx_rotation_currentPos"/>
+    </item>
+    <item row="9" column="2">
+     <widget class="QPushButton" name="btn_Rotation_tare">
+      <property name="text">
+       <string>Tare</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="8" colspan="2">
+     <widget class="QLineEdit" name="txtbx_linear_currentPos_2"/>
+    </item>
+    <item row="9" column="10">
+     <widget class="QPushButton" name="btn_linear_tare">
+      <property name="text">
+       <string>Tare</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="15" colspan="2">
+     <widget class="QPushButton" name="btn_linear_tare_2">
+      <property name="text">
+       <string>Off</string>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="14" rowspan="3" colspan="3">
+     <widget class="Line" name="line_6">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="0" rowspan="2">
+     <widget class="QLabel" name="label_8">
+      <property name="text">
+       <string>Relative</string>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="1" rowspan="3">
+     <widget class="QLineEdit" name="txtbx_rotation_moveRel"/>
+    </item>
+    <item row="11" column="2" rowspan="3">
+     <widget class="QPushButton" name="btn_Rotation_moveRel">
+      <property name="text">
+       <string>Move Rel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="5" rowspan="2">
+     <widget class="QLabel" name="label_12">
+      <property name="text">
+       <string>Relative</string>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="8" rowspan="3" colspan="2">
+     <widget class="QLineEdit" name="txtbx_linear_moveRel_2"/>
+    </item>
+    <item row="11" column="10" rowspan="3">
+     <widget class="QPushButton" name="btn_linear_moveRel">
+      <property name="text">
+       <string>Move Rel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="12" column="15" rowspan="3" colspan="2">
+     <widget class="QPushButton" name="btn_linear_tare_4">
+      <property name="text">
+       <string>On</string>
+      </property>
+     </widget>
+    </item>
+    <item row="13" column="14" rowspan="3">
+     <widget class="QLabel" name="label_17">
+      <property name="text">
+       <string>Beam</string>
+      </property>
+     </widget>
+    </item>
+    <item row="14" column="0" rowspan="3">
+     <widget class="QLabel" name="label_9">
+      <property name="text">
+       <string>Absolute</string>
+      </property>
+     </widget>
+    </item>
+    <item row="14" column="5" rowspan="3">
+     <widget class="QLabel" name="label_13">
+      <property name="text">
+       <string>Absolute</string>
+      </property>
+     </widget>
+    </item>
+    <item row="15" column="2" rowspan="2">
+     <widget class="QPushButton" name="btn_Rotation_moveAbs">
+      <property name="text">
+       <string>Move Abs</string>
+      </property>
+     </widget>
+    </item>
+    <item row="15" column="10" rowspan="2">
+     <widget class="QPushButton" name="btn_linear_moveAbs">
+      <property name="text">
+       <string>Move Abs</string>
+      </property>
+     </widget>
+    </item>
+    <item row="16" column="1">
+     <widget class="QLineEdit" name="txtbx_rotation_moveAbs"/>
+    </item>
+    <item row="16" column="8" colspan="2">
+     <widget class="QLineEdit" name="txtbx_linear_moveAbs_2"/>
+    </item>
+    <item row="16" column="15" colspan="2">
+     <widget class="QPushButton" name="btn_linear_tare_5">
+      <property name="text">
+       <string>Off</string>
+      </property>
+     </widget>
+    </item>
+    <item row="17" column="0" colspan="17">
+     <widget class="Line" name="line_4">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="18" column="0">
+     <widget class="QLabel" name="label_14">
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Acquisition</string>
+      </property>
+     </widget>
+    </item>
+    <item row="19" column="0">
+     <widget class="QLabel" name="label_15">
+      <property name="text">
+       <string>SMX Exposures</string>
+      </property>
+     </widget>
+    </item>
+    <item row="19" column="1" colspan="2">
+     <widget class="QLineEdit" name="txtbx_rotation_currentPos_3"/>
+    </item>
+    <item row="19" column="5" rowspan="2" colspan="3">
+     <widget class="QLabel" name="label_19">
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;(Values separated &lt;/p&gt;&lt;p&gt;by comma)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="19" column="9" colspan="2">
+     <widget class="QLabel" name="label_20">
+      <property name="text">
+       <string>Linear Stage</string>
+      </property>
+     </widget>
+    </item>
+    <item row="19" column="11" colspan="5">
+     <widget class="QLineEdit" name="txtbx_rotation_currentPos_5"/>
+    </item>
+    <item row="19" column="16" rowspan="2">
+     <widget class="QLabel" name="label_22">
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;(From,&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:7pt;&quot;&gt;To,Step)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="20" column="0">
+     <widget class="QLabel" name="label_18">
+      <property name="text">
+       <string>Manta Exposures</string>
+      </property>
+     </widget>
+    </item>
+    <item row="20" column="1" colspan="2">
+     <widget class="QLineEdit" name="txtbx_rotation_currentPos_4"/>
+    </item>
+    <item row="20" column="9" colspan="2">
+     <widget class="QLabel" name="label_21">
+      <property name="text">
+       <string>Rotation Stage</string>
+      </property>
+     </widget>
+    </item>
+    <item row="20" column="11" colspan="5">
+     <widget class="QLineEdit" name="txtbx_rotation_currentPos_6"/>
+    </item>
+    <item row="21" column="5" colspan="3">
+     <widget class="QPushButton" name="pushButton">
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Acquire</string>
+      </property>
+     </widget>
+    </item>
+    <item row="21" column="9" colspan="2">
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="text">
+       <string>Stop</string>
+      </property>
+     </widget>
+    </item>
+    <item row="21" column="11" colspan="4">
+     <widget class="QLabel" name="label_23">
+      <property name="font">
+       <font>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Acquiring</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>731</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
